@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
-import Home from "../Components/Home/Home/Home";
-import Services from "../Pages/Services/Services";
-import Animation from "../Pages/Animation/Animation";
-import CgiAnimation from "../Pages/CgiAnimation/CgiAnimation";
+import Home from "../Components/Pages/Home/Home/Home";
+import Services from "../Components/Pages/Services/Services";
+import Animation from "../Components/Pages/Animation/Animation";
+import CgiAnimationItem from "../Components/Pages/CgiAnimation/CgiAnimationItem";
 
 const router = createBrowserRouter([
     {
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'services/cgi',
-                element:<CgiAnimation></CgiAnimation>
+                element:<CgiAnimationItem></CgiAnimationItem>
             },
 
         ])

@@ -3,17 +3,7 @@
   text-align: center;
 }
 
-/* css for vidoe */
-.video-background{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-}
+
 
 .logo {
   height: 6em;

@@ -19,7 +19,7 @@ const Navbar = () => {
   ]
   
   return (
-    <nav className='p-5 shadow-lg bg-gray-900  md:flex md:items-center md:justify-between sticky top-0 z-10'> 
+    <nav className='p-5 shadow-lg bg-gray  md:flex md:items-center md:justify-between sticky top-0 z-10'> 
       <div className='flex justify-between items-center'>
         <Link to='/' className='text-4xl text-gray-400 font-[poppins] cursor-pointer'>
           <img src={logo} className='w-11 rounded-full' alt="" />
@@ -37,13 +37,13 @@ const Navbar = () => {
       <ul id='list-item' className={`md:flex  w-full absolute left-0 items-center transition-all top-20 ease-in md:static md:w-auto duration-500 ${open ? 'top-20' : 'top-[-490px]'}`}>
 
         <li className='mx-4  my-6 md:my-0'>
-          <Link to={'/'} className='text-white flex items-center hover:text-gray'>
+          <Link to={'/'} className='text-white flex items-center '>
           <FaHome className='me-1'></FaHome>
             Home
           </Link>
         </li>
         <li className='mx-4 my-6 md:my-0 w-full relative'>
-          <Link to={'/services'} onMouseEnter={()=> setIsOpen((prev)=> !prev)} className='text-white flex items-center hover:text-gray'>
+          <Link to={'/'} onClick={()=> setIsOpen((prev)=> !prev)} className='text-white flex items-center '>
           <FaRProject className='me-1'></FaRProject>
             Services
           {
@@ -54,20 +54,20 @@ const Navbar = () => {
           </Link>
         </li>
         <li className='mx-4 my-6 md:my-0'>
-          <Link to={'/blog'} className='text-white flex items-center hover:text-gray'>
+          <Link to={'/blog'} className='text-white flex items-center '>
           <FaBloggerB className='me-1'></FaBloggerB>
             Blog
           </Link>
         </li>
         
         <li className='mx-4 my-6 md:my-0'>
-          <Link to={'/upcoming'} className='text-white flex items-center hover:text-gray'>
+          <Link to={'/upcoming'} className='text-white flex items-center '>
             <FaQuestionCircle className='me-1'></FaQuestionCircle>
             Contact
           </Link>
         </li>
         <li className='mx-4 my-6 md:my-0'>
-          <Link to={'/about'} className='text-white flex items-center hover:text-gray'>
+          <Link to={'/about'} className='text-white flex items-center '>
             <FaUserFriends className='me-1'></FaUserFriends>
             About
           </Link>

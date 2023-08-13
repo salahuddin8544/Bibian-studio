@@ -3,13 +3,13 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='py-6 mx-auto w-full bg-black'>
+        <div className='py-2 mx-auto w-full bg-gray'>
             <div className='grid grid-cols-3 gap-4  mx-auto w-32'>
-            <FaFacebook className='w-11 h-11'></FaFacebook>
-            <FaInstagram className='w-11 h-11'></FaInstagram>
-            <FaTwitter className='w-11 h-11'></FaTwitter>
+            <FaFacebook className='w-9 h-9 duration-200 p-0.5 text-facebook bg-white rounded-full border-none hover:text-gray cursor-pointer'></FaFacebook>
+            <FaInstagram className='w-9 h-9 text-instagram p-0.5 cursor-pointer bg-white rounded-full hover:text-gray duration-200'></FaInstagram>
+            <FaTwitter className='w-9 h-9 text-twitter p-0.5 cursor-pointer bg-white rounded-full hover:text-gray duration-200'></FaTwitter>
             </div>
-            <h2 className='text-white pt-4'>All right reserved 2023</h2>
+            <h2 className='text-white pt-2'>All right reserved Vivian Studio 2023</h2>
         </div>
     );
 };

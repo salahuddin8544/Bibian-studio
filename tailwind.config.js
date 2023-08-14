@@ -13,7 +13,10 @@ export default {
       'linkedin': '#0077b5',
       'gray':'#0f172a',
       'white':'#FFFFFF',
-      'black':'#000000'
+      'black':'#000000',
+      'grey':'#252525',
+      'grey2':'#545454',
+      'grey3':'#A2A0A0'
     },
     extend: {},
   },

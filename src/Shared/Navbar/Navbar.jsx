@@ -61,7 +61,7 @@ const Navbar = () => {
         </li>
         
         <li className='mx-4 my-6 md:my-0'>
-          <Link to={'/upcoming'} className='text-white flex items-center '>
+          <Link to={'/contact'} className='text-white flex items-center '>
             <FaQuestionCircle className='me-1'></FaQuestionCircle>
             Contact
           </Link>

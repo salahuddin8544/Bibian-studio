@@ -6,11 +6,11 @@ import Footer from '../Shared/Footer/Footer';
 const Main = () => {
     return (
         <div>
-            <Navbar>
-                
-            </Navbar>
+            <Navbar>  </Navbar>
             <Outlet></Outlet>
-            <Footer></Footer>
+             
+             <Footer ></Footer>
+            
         </div>
     );
 };

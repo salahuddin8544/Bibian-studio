@@ -5,14 +5,14 @@ import './Home.css'
 const Home = () => {
     if(!video)
 {
-    return 'Hello World'
+    return 'Loading content'
 }    return (
-        <div className='w-full mx-auto'>
+        <div className='w-full  mx-auto mb-32  '>
             <video src={video} autoPlay loop className='video-background' muted playsInline>
 
 
             </video>
-            <img className='w-3/5 mx-auto ' src={image} alt="" />
+            <img className='w-3/5 mx-auto  ' src={image} alt="" />
         </div>
     );
 };

@@ -19,7 +19,7 @@ const Navbar = () => {
   ]
   
   return (
-    <nav className='p-5 shadow-lg bg-gray  md:flex md:items-center md:justify-between sticky top-0 z-10'> 
+    <nav className='p-3 shadow-lg bg-gray  md:flex md:items-center md:justify-between sticky top-0 z-10'> 
       <div className='flex justify-between items-center'>
         <Link to='/' className='text-4xl text-gray-400 font-[poppins] cursor-pointer'>
           <img src={logo} className='w-11 rounded-full' alt="" />

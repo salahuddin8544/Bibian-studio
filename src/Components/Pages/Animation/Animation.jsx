@@ -53,7 +53,7 @@ const Animation = () => {
         <div>
             <section>
                 
-                <iframe className='w-full' height="315" src="https://www.youtube.com/embed/S_REUE9Mow0?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className='w-full' height="600" src="https://www.youtube.com/embed/S_REUE9Mow0?start=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
             <section>
                 <div className='w-11/12 mx-auto py-16'>

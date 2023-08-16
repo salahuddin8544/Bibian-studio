@@ -7,21 +7,8 @@ const Contact = () => {
         console.log(data);
     }
     return (
-        <div className=' grid grid-cols-12 text-white'>
-            <div className='col-span-12 md:col-span-4 bg-grey2 ps-6 pe-10 py-16 md:py-24'>
-                <div className='mt-8'>
-                    <h3 className='text-sm font-se text-grey3 '>JOB ENQUIRIES</h3>
-                    <p className='font-semibold'>info@brickh.com</p>
-                </div>
-                <div className='mt-8'>
-                    <h3 className='text-sm font-se text-grey3 '>CALL US</h3>
-                    <p className='font-semibold'>0330 058 5333</p>
-                </div>
-                <div className='mt-8'>
-                    <h3 className='text-sm font-se text-grey3 '>HQ</h3>
-                    <p className='font-semibold'>Unit 4, Third Floor, 12 Hilton Street, Northern Quarter, Manchester, M1 1JF</p>
-                </div>
-            </div>
+        <div className='grid grid-cols-12 text-white'>
+           
             <div className='col-span-12 md:col-span-8 bg-grey ps-6 md:ps-8 py-16 md:py-24'>
                 <h3 className='text-4xl font-bold'>GET IN TOUCH</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -57,6 +44,20 @@ const Contact = () => {
                     </div>
                    
                 </form>
+            </div>
+            <div className='col-span-12 md:col-span-4 bg-grey2 ps-6 pe-10 py-16 md:py-24'>
+                <div className='mt-8'>
+                    <h3 className='text-sm font-se text-grey3 '>JOB ENQUIRIES</h3>
+                    <p className='font-semibold'>info@brickh.com</p>
+                </div>
+                <div className='mt-8'>
+                    <h3 className='text-sm font-se text-grey3 '>CALL US</h3>
+                    <p className='font-semibold'>0330 058 5333</p>
+                </div>
+                <div className='mt-8'>
+                    <h3 className='text-sm font-se text-grey3 '>HQ</h3>
+                    <p className='font-semibold'>Unit 4, Third Floor, 12 Hilton Street, Northern Quarter, Manchester, M1 1JF</p>
+                </div>
             </div>
         </div>
     );

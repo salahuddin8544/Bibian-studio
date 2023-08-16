@@ -9,12 +9,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const lists = [
     {
-      name:"3D Animation",
-      link:'services/animation'
+      name:"VFX",
+      link:'services/vfx'
     },
     {
-      name:"CGI",
-      link:'services/cgi'
+      name:"Animation & CGI",
+      link:'services/3danimation&cgi'
+    },
+    {
+      name:"AR/VR",
+      link:'services/ar/br'
     }
   ]
   
@@ -37,21 +41,21 @@ const Navbar = () => {
       <ul id='list-item' className={`md:flex  w-full absolute left-0 items-center transition-all top-20 ease-in md:static md:w-auto duration-500 ${open ? 'top-20' : 'top-[-490px]'}`}>
 
         <li className='mx-4  my-6 md:my-0'>
-          <Link to={'/'} className='text-white flex items-center '>
+          <Link className='text-white flex items-center '>
           <FaHome className='me-1'></FaHome>
             Home
           </Link>
         </li>
         <li className='mx-4 my-6 md:my-0 w-full relative'>
-          <Link to={'/'} onClick={()=> setIsOpen((prev)=> !prev)} className='text-white flex items-center '>
+          <h3  onClick={()=> setIsOpen((prev)=> !prev)} className='text-white flex items-center '>
           <FaRProject className='me-1'></FaRProject>
             Services
           {
-            isOpen && <div className='w-full absolute top-6'>{lists.map((list,i)=>(
-              <h3 className='bg-white border-b-2' style={{width:'115px'}} key={i}><Link to={list.link} className=''  >{list.name}</Link></h3>
+            isOpen && <div className='w-full absolute top-8 rounded'>{lists.map((list,i)=>(
+              <h3 className='bg-white border-b-2 ps-2' style={{width:'170px'}} key={i}><Link to={list.link} className=''  >{list.name}</Link></h3>
             ))}</div>
           }
-          </Link>
+          </h3>
         </li>
         <li className='mx-4 my-6 md:my-0'>
           <Link to={'/blog'} className='text-white flex items-center '>
@@ -61,15 +65,15 @@ const Navbar = () => {
         </li>
         
         <li className='mx-4 my-6 md:my-0'>
-          <Link to={'/contact'} className='text-white flex items-center '>
-            <FaQuestionCircle className='me-1'></FaQuestionCircle>
-            Contact
-          </Link>
-        </li>
-        <li className='mx-4 my-6 md:my-0'>
           <Link to={'/about'} className='text-white flex items-center '>
             <FaUserFriends className='me-1'></FaUserFriends>
             About
+          </Link>
+        </li>
+        <li className='mx-4 my-6 md:my-0'>
+          <Link to={'/contact'} className='text-white flex items-center '>
+            <FaQuestionCircle className='me-1'></FaQuestionCircle>
+            Contact
           </Link>
         </li>
       </ul>

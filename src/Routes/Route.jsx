@@ -2,9 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
 import Home from "../Components/Pages/Home/Home/Home";
 import Services from "../Components/Pages/Services/Services";
-import Animation from "../Components/Pages/Animation/Animation";
-import CgiAnimationItem from "../Components/Pages/CgiAnimation/CgiAnimationItem";
 import Contact from "../Components/Pages/Contact/Contact";
+import AnimationCgi from "../Components/Pages/Animation&CGI/AnimationCgi";
+import VFX from "../Components/Pages/VFX/VFX";
+import ArBr from "../Components/Pages/ArBr/ArBr";
+import About from "../Components/Pages/About/About";
 
 const router = createBrowserRouter([
     {
@@ -20,16 +22,20 @@ const router = createBrowserRouter([
                 element:<Services></Services>
             },
             {
-                path:'services/animation',
-                element:<Animation></Animation>
+                path:'services/3danimation&cgi',
+                element:<AnimationCgi></AnimationCgi>
             },
             {
-                path:'services/cgi',
-                element:<CgiAnimationItem></CgiAnimationItem>
+                path:'services/ar/br',
+                element:<ArBr></ArBr>
             },
             {
                 path:'contact',
                 element:<Contact></Contact>
+            },
+            {
+                path:'about',
+                element:<About></About>
             },
 
         ])

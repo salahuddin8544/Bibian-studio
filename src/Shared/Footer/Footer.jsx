@@ -9,7 +9,7 @@ const Footer = () => {
             <FaInstagram className='w-9 h-9 text-instagram p-0.5 cursor-pointer bg-white rounded-full hover:text-gray duration-200'></FaInstagram>
             <FaTwitter className='w-9 h-9 text-twitter p-0.5 cursor-pointer bg-white rounded-full hover:text-gray duration-200'></FaTwitter>
             </div>
-            <h2 className='text-white pt-2'>All right reserved Vivian Studio 2023</h2>
+            <h2 className='text-white pt-2 text-center'>All right reserved Vivian Studio 2023</h2>
         </div>
     );
 };

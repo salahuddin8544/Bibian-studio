@@ -6,13 +6,14 @@ const Home = () => {
     if(!video)
 {
     return 'Loading content'
-}    return (
-        <div className='w-full  mx-auto mb-32  '>
+}  
+  return (
+        <div className='w-full  mx-auto mb-14  '>
             <video src={video} autoPlay loop className='video-background' muted playsInline>
 
 
             </video>
-            <img className='w-3/5 mx-auto  ' src={image} alt="" />
+            <img className='w-3/5 mx-auto mt-24 ' src={image} alt="" />
         </div>
     );
 };

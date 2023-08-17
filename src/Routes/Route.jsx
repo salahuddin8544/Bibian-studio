@@ -31,6 +31,10 @@ const router = createBrowserRouter([
                 path:'contact',
                 element:<Contact></Contact>
             },
+            {
+                path:'*' ,
+                element: <div className="text-4xl text-center h-screen pt-40 font-semibold text-[red]"> Oops ! Routes not found   </div>
+            }
 
         ])
     }

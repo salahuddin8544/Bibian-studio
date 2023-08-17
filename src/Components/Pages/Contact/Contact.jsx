@@ -22,11 +22,11 @@ const Contact = () => {
                     <p className='font-semibold'>Unit 4, Third Floor, 12 Hilton Street, Northern Quarter, Manchester, M1 1JF</p>
                 </div>
             </div>
-            <div className='col-span-12 md:col-span-8 bg-grey ps-6 md:ps-8 py-16 md:py-24'>
-                <h3 className='text-4xl font-bold'>GET IN TOUCH</h3>
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <div className="mt-10 grid grid-cols-12">
-                        <label className="block md:inline col-span-12 md:col-span-4">
+            <div className='col-span-12 md:col-span-8 bg-grey ps-6 md:ps-8 py-16 md:py-24 mx-auto'>
+                <h3 className='text-4xl font-bold lg:text-start md:text-start text-center'>GET IN TOUCH</h3>
+                <form onSubmit={handleSubmit(onSubmit)} className=' lg:w-full md:w-10/12 w-10/12 mx-auto'>
+                    <div className="mt-10 grid grid-cols-12 ">
+                        <label className="block md:inline col-span-12 md:col-span-4  ">
                             <span className="font-semibold">Name</span>
                         </label>
                         <input {...register("name")} type="text" placeholder="Name" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />

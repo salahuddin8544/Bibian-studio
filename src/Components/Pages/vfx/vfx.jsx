@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import certificate from '../../../assets/certificate/certificate.png'
 const VFX = () => {
     return (
         <div className='bg-gray2'>
             <section className='w-11/12 mx-auto'>
-                <iframe className='w-full' height="315" src="https://www.youtube.com/embed/fjzZFceZDTA?start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className='w-full' height="600" src="https://www.youtube.com/embed/fjzZFceZDTA?start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p className='mt-6'>Visual Effects (VFX) involve crafting, altering, and enhancing visuals for movies, TV, games, and media. These effects are often shaped using computer-generated imagery (CGI) and can be combined with real-world effects. Vivian Studios has been working in the industry to help a lot of creative minds since 2020.</p>
             </section>
             <section className='w-11/12 mx-auto py-16'>
@@ -32,8 +32,8 @@ const VFX = () => {
                 <p>VFX Production is pivotal, enabling creators to realize creative visions, depict risky scenes, and merge practical and CGI methods for striking results. The blend of both techniques evolves
                     continuously, shaping captivating visual narratives.
                 </p>
-               <div className='text-center mt-6'>
-               <Link className='border p-3 bg-grey2 text-white'>Certification</Link>
+               <div className='text-center mt-6 mx-auto'>
+                    <img className='w-32 mx-auto' src={certificate} alt="" />
                </div>
             </section>
         </div>

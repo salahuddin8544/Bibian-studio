@@ -26,6 +26,10 @@ const router = createBrowserRouter([
                 element:<AnimationCgi></AnimationCgi>
             },
             {
+                path:'services/vfx',
+                element:<VFX></VFX>
+            },
+            {
                 path:'services/ar/br',
                 element:<ArBr></ArBr>
             },

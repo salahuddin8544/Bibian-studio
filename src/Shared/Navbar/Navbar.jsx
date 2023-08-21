@@ -13,7 +13,7 @@ const Navbar = () => {
       link:'services/vfx'
     },
     {
-      name:"Animation & CGI",
+      name:"ANIMATION & CGI",
       link:'services/3danimation&cgi'
     },
     {
@@ -23,7 +23,7 @@ const Navbar = () => {
   ]
   
   return (
-    <nav className='p-5 shadow-lg bg-gray  md:flex md:items-center md:justify-between sticky top-0 z-10'> 
+    <nav className='p-5 shadow-lg bg-grey  md:flex md:items-center md:justify-between sticky top-0 z-10'> 
       <div className='flex justify-between items-center'>
         <Link to='/' className='text-4xl text-gray-400 font-[poppins] cursor-pointer'>
           <img src={logo} className='w-11 rounded-full' alt="" />
@@ -42,38 +42,33 @@ const Navbar = () => {
 
         <li className='mx-4  my-6 md:my-0'>
           <Link className='text-white flex items-center '>
-          <FaHome className='me-1'></FaHome>
-            Home
+            HOME
           </Link>
         </li>
         <li className='mx-4 my-6 md:my-0 w-full relative'>
-          <h3  onClick={()=> setIsOpen((prev)=> !prev)} className='text-white flex items-center '>
-          <FaRProject className='me-1'></FaRProject>
-            Services
+          <Link  onClick={()=> setIsOpen((prev)=> !prev)} className='text-white flex items-center '>
+            SERVICES
           {
             isOpen && <div className='w-full absolute top-8 rounded'>{lists.map((list,i)=>(
-              <h3 className='bg-white border-b-2 ps-2' style={{width:'170px'}} key={i}><Link to={list.link} className=''  >{list.name}</Link></h3>
+              <h3 className='bg-grey text-white border-b-2 ps-2' style={{width:'170px'}} key={i}><Link to={list.link} className=''  >{list.name}</Link></h3>
             ))}</div>
           }
-          </h3>
+          </Link>
         </li>
         <li className='mx-4 my-6 md:my-0'>
           <Link to={'/blog'} className='text-white flex items-center '>
-          <FaBloggerB className='me-1'></FaBloggerB>
-            Blog
+            BLOG
           </Link>
         </li>
         
         <li className='mx-4 my-6 md:my-0'>
           <Link to={'/about'} className='text-white flex items-center '>
-            <FaUserFriends className='me-1'></FaUserFriends>
-            About
+            ABOUT
           </Link>
         </li>
         <li className='mx-4 my-6 md:my-0'>
           <Link to={'/contact'} className='text-white flex items-center '>
-            <FaQuestionCircle className='me-1'></FaQuestionCircle>
-            Contact
+            CONTACT
           </Link>
         </li>
       </ul>

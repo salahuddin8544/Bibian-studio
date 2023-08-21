@@ -15,3 +15,8 @@
     background-size: 100% 3px;
     background-position: 0 100%
 }
+@media screen and (max-width: 480px) {
+    #list-item{
+        background-color: black;
+    }
+  }

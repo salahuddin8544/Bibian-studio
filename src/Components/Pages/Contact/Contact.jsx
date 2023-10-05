@@ -2,6 +2,7 @@ import React,{ useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
+import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 const Contact = () => {
     const { register, handleSubmit } = useForm();
     const form = useRef();
@@ -18,11 +19,18 @@ const Contact = () => {
         
     }
 
+    const handleWhatsAppClick = () => {
+        // const url = `https://wa.me/${phoneNumber}`;
+        const url = `https://wa.me/qr/KH4PTDIGE4GAG1`;
+        // window.open(url, '_blank')
+        window.location.href = url ;
+    }
+
     
     return (
-        <div className='grid grid-cols-12 text-white'>
+        <div className='grid grid-cols-12 gap-y-5 bg-[#242323] text-white border-b border-grey2 '>
            
-            <div className='col-span-12 md:col-span-8 bg-grey ps-6 md:ps-8 py-16 md:py-24'>
+            <div className='col-span-12 md:col-span-8 bg-grey ps-6 md:ps-8 py- md:py-12'>
                 <h3 className='text-4xl font-bold'>GET IN TOUCH</h3>
                 <form ref={form}  onSubmit={handleSubmit(sendEmail)}>
                     <div className="mt-10 grid grid-cols-12">
@@ -49,7 +57,7 @@ const Contact = () => {
                         </label>
                         <textarea type="text"{...register("message")}  placeholder="Message" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" name="" id="" cols="30" rows="5"></textarea>
                     </div>
-                    <div className="mt-10 grid grid-cols-12">
+                    <div className="mt-10 grid grid-cols-12 ">
                         <label className="block md:inline col-span-12 md:col-span-4">
                         
                         </label>
@@ -58,19 +66,18 @@ const Contact = () => {
                    
                 </form>
             </div>
-            <div className='col-span-12 md:col-span-4 bg-grey2 ps-6 pe-10 py-16 md:py-24'>
+            <div className='col-span-12 md:col-span-4 bg-grey2 ps-6 pe-10 py-16 md:py-24 '>
                 <div className='mt-8'>
                     <h3 className='text-sm font-se text-grey3 '>ENQUIRIES</h3>
-                    <p className='font-semibold'>info@brickh.com</p>
+                    <p className='font-semibold flex items-center gap-x-3'> <FaEnvelope className='text-white'/>  contact@vivianstudios.com</p>
                 </div>
                 <div className='mt-8'>
                     <h3 className='text-sm font-se text-grey3 '>CALL US</h3>
-                    <p className='font-semibold'>0330 058 5333</p>
+                    <p className='font-semibold flex items-center gap-x-3 '> <FaPhoneAlt className='text-white'/> +8801303542117 </p>
                 </div>
-                <div className='mt-8'>
-                    <h3 className='text-sm font-se text-grey3 '>HQ</h3>
-                    <p className='font-semibold'>Unit 4, Third Floor, 12 Hilton Street, Northern Quarter, Manchester, M1 1JF</p>
-                </div>
+                 <div className='mt-8'>
+                    <FaWhatsapp onClick={handleWhatsAppClick} className='text-4xl bg-[#2bbd2b] rounded-full cursor-pointer ' />
+                 </div>
             </div>
         </div>
     );

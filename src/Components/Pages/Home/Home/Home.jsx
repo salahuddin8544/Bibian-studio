@@ -1,17 +1,20 @@
 import React from 'react';
-import video from '../../../../assets/video/background-video.mp4'
 import image from '../../../../assets/logp-gif/gif-image.gif'
+import vibian from '../../../../assets/logo/vibian-write-2.png'
 import './Home.css'
 const Home = () => {
       return (
-        <div className='w-full mx-auto'>
-            <video height={600} src={video} autoPlay loop className='video-background' muted playsInline>
+        <section className='w-full mx-auto pb-8 lg:mb-0 md:mb-0 sm:mb-10 mb-20 '>
+            <div className='w-full mx-auto '>
+            
+            <img className=' w-2/4 h-2/4 mx-auto mt-10' src={image} alt="" />
+             <div className='mt-5'>
+              <img src={vibian} className='lg:w-[44%]  w-[50%] mx-auto lg:h-[38vh] md:h-[24vh]'/>
+             </div>
+            
 
-
-            </video>
-            <img className=' w-2/4 h-2/4 mx-auto mt-5' src={image} alt="" />
-            <h3 className='text-center text-3xl mb-4 vivian-font'>Vivian Studios</h3>
         </div>
+        </section>
     );
 };
 

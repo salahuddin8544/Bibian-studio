@@ -1,15 +1,27 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaCopyright, FaFacebook,  FaInstagram, FaLinkedin, FaTwitter, FaVimeo, FaYoutube } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='py-2 mx-auto w-full bg-grey'>
-            <div className='grid grid-cols-3 gap-4  mx-auto w-32'>
-            <FaFacebook className='w-9 h-9 duration-200 p-0.5 hover:text-facebook bg-white rounded-full border-none text-grey cursor-pointer'></FaFacebook>
-            <FaInstagram className='w-9 h-9 hover:text-instagram p-0.5 cursor-pointer bg-white rounded-full text-grey duration-200'></FaInstagram>
-            <FaTwitter className='w-9 h-9 hover:text-twitter p-0.5 cursor-pointer bg-white rounded-full text-grey duration-200'></FaTwitter>
+        <div className='py-2 absolute h-28  flex justify-center items-center  w-full bg-grey'>
+          <div>
+          <div className='flex gap-x-4    mx-auto  '>
+           <Link to={`https://www.facebook.com/officialvivianstudios`}> <FaFacebook className='w-7 h-7 duration-200 p-0.5 text-[#808080] hover:text-white   rounded-full border-none  cursor-pointer'></FaFacebook> </Link>
+            
+            <Link to={'https://www.youtube.com/channel/UC8PqF-MmQsQ9aoByfhyzZJg'}> <FaYoutube className='w-7 h-7 duration-200 p-0.5 text-[#808080] hover:text-white   rounded-full border-none  cursor-pointer'/> </Link>
+
+          <Link to={'https://www.instagram.com/vivian.studios/'}><FaInstagram  className='w-7 h-7  p-0.5 cursor-pointer text-[#808080] hover:text-white  duration-200'></FaInstagram> </Link>
+
+        <Link to={'https://twitter.com/vivian_studios'}> <FaTwitter  className='w-7 h-7 text-[#808080] hover:text-white   p-0.5 cursor-pointer rounded-full  duration-200'></FaTwitter> </Link>
+
+            <Link to={'https://www.linkedin.com/company/officialvivianstudios'}> <FaLinkedin  className='w-7 h-7 text-[#808080] hover:text-white   p-0.5 cursor-pointer rounded-full  duration-200'/> </Link>
+           
+            <Link to={'https://vimeo.com/user205910158'}> <FaVimeo href='https://vimeo.com/user205910158
+twitter' className='w-7 h-7 text-[#808080] hover:text-white   p-0.5 cursor-pointer rounded-full  duration-200'/> </Link>
             </div>
-            <h2 className='text-white pt-2 text-center'>All right reserved Vivian Studios</h2>
+            <p className='text-[#cecbcb]  text-[15px] pt-4 text-center flex items-center gap-x-2'><FaCopyright/> All right reserved by Vivian Studios</p>
+          </div>
         </div>
     );
 };

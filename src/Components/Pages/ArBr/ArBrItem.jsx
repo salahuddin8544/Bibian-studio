@@ -3,7 +3,8 @@ import React from 'react';
 const ArBrItem = ({ content }) => {
     const { video, title, description } = content;
     return (
-        <div className='grid grid-cols-12 items-center my-8'>
+        <section>
+             <div className='grid grid-cols-12 items-center my-8'>
             <div className='col-span-12 md:col-span-4 mx-auto'>
                 <span>{video}</span>
             </div>
@@ -12,6 +13,8 @@ const ArBrItem = ({ content }) => {
                 <p className='text-lg'>{description}</p>
             </div>
         </div>
+
+        </section>
     );
 };
 

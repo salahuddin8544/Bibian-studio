@@ -1,10 +1,13 @@
 import React from 'react';
-
+import logo from '../../../assets/logo/logo-bibian.png'
 const About = () => {
     return (
         <div>
             <div className='w-11/12 mx-auto my-9'>
-                <h3 className='text-3xl'>Welcome to Vivian Studios!</h3>
+                <div className='flex justify-center w-full  mb-8'>
+                    <img src={logo} className='w-320 h-32 ' />
+                </div>
+                <h3 className='text-3xl text-center'>Welcome to Vivian Studios!</h3>
                 <p className='py-4'>Founded amidst the challenging times of the COVID-19 pandemic on May 30th, 2020, Vivian
                     Studios embarked on a remarkable journey. In a world grappling for survival, we set out with a
                     unique vision – to illuminate the splendor of life through captivating visual narratives.

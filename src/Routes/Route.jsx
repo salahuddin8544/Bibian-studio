@@ -4,14 +4,17 @@ import Home from "../Components/Pages/Home/Home/Home";
 import Services from "../Components/Pages/Services/Services";
 import Contact from "../Components/Pages/Contact/Contact";
 import AnimationCgi from "../Components/Pages/Animation&CGI/AnimationCgi";
-import VFX from "../Components/Pages/VFX/VFX";
 import ArBr from "../Components/Pages/ArBr/ArBr";
+import  VFX from '../Components/Pages/vfx/vfx' ;
 import About from "../Components/Pages/About/About";
+import VideoEditGraphicsThumbnail from "../Components/Pages/videoEditThumbnail/VideoEditGraphicsThumbnail";
+import Blog from "../Components/Pages/Blog/Blog";
+import SingleBlog from "../Components/Pages/Blog/SingleBlog";
 
 const router = createBrowserRouter([
     {
         path:'/',
-        element:<Main></Main>,
+        element:<Main> </Main>,
         children:([
             {
                 path:'/',
@@ -27,11 +30,15 @@ const router = createBrowserRouter([
             },
             {
                 path:'services/vfx',
-                element:<VFX></VFX>
+                element:<VFX/>
             },
             {
                 path:'services/ar/br',
                 element:<ArBr></ArBr>
+            },
+            {
+                path:'/sercices/video-editing&motion-graphics&thumbnail',
+                element: <VideoEditGraphicsThumbnail/> 
             },
             {
                 path:'contact',
@@ -41,6 +48,18 @@ const router = createBrowserRouter([
                 path:'about',
                 element:<About></About>
             },
+            {
+                path: 'blog',
+                element: <Blog/> 
+            },
+            {
+                path:'/blog/details/:id',
+                element: <SingleBlog/>
+            },
+            {
+                path:'*',
+                element: <div className="text-4xl font-bold text-center ">  Routes not  found ! </div>
+            }
 
         ])
     }

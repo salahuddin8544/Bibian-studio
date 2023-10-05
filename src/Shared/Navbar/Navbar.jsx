@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-import { HiLogin, HiMenu, HiOutlineX, HiShoppingCart } from "react-icons/hi";
-import { FaSignOutAlt, FaSignInAlt, FaHome, FaRProject, FaBloggerB, FaCloudDownloadAlt, FaQuestionCircle, FaUserFriends } from "react-icons/fa";
+import {  HiMenu, HiOutlineX } from "react-icons/hi";
 import logo from '../../assets/logo/logo-bibian.png'
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -19,11 +18,15 @@ const Navbar = () => {
     {
       name:"AR/VR",
       link:'services/ar/br'
+    },
+    {
+      name:"Video edit , Motion Graphics , Thumbnail",
+      link: '/sercices/video-editing&motion-graphics&thumbnail'
     }
   ]
   
   return (
-    <nav className='p-5 shadow-lg bg-grey  md:flex md:items-center md:justify-between sticky top-0 z-10'> 
+    <nav className='px-5 py-4 shadow-lg bg-grey  md:flex md:items-center md:justify-between sticky top-0 z-10'> 
       <div className='flex justify-between items-center'>
         <Link to='/' className='text-4xl text-gray-400 font-[poppins] cursor-pointer'>
           <img src={logo} className='w-11 rounded-full' alt="" />
@@ -38,35 +41,35 @@ const Navbar = () => {
         </div>
 
       </div>
-      <ul id='list-item' className={`md:flex  w-full absolute left-0 items-center transition-all top-20 ease-in md:static md:w-auto duration-500 ${open ? 'top-20' : 'top-[-490px]'}`}>
+      <ul id='list-item' className={`md:flex  w-full absolute left-0 items-center transition-all top-20 ease-in md:static md:w-auto duration-500 bg-[#252525] ${open ? 'top-20' : 'top-[-490px]'}`}>
 
-        <li className='mx-4  my-6 md:my-0'>
+        <li className='px-4  my-6 md:my-0'>
           <Link className='text-white flex items-center '>
             HOME
           </Link>
         </li>
-        <li className='mx-4 my-6 md:my-0 w-full relative'>
+        <li className='px-4 my-6 md:my-0 w-full relative'>
           <Link  onClick={()=> setIsOpen((prev)=> !prev)} className='text-white flex items-center '>
             SERVICES
           {
             isOpen && <div className='w-full absolute top-8 rounded'>{lists.map((list,i)=>(
-              <h3 className='bg-grey text-white border-b-2 ps-2' style={{width:'170px'}} key={i}><Link to={list.link} className=''  >{list.name}</Link></h3>
+              <h3 className='bg-grey text-white border-b-2 ps-2' style={{width:'170px'}} key={i}><Link className='text-white' to={list.link}  > <span className='text-white hover:text-messenger'>{list.name}</span> </Link></h3>
             ))}</div>
           }
           </Link>
         </li>
-        <li className='mx-4 my-6 md:my-0'>
+        <li className='px-4 my-6 md:my-0 '>
           <Link to={'/blog'} className='text-white flex items-center '>
             BLOG
           </Link>
         </li>
         
-        <li className='mx-4 my-6 md:my-0'>
+        <li className='px-4 my-6 md:my-0'>
           <Link to={'/about'} className='text-white flex items-center '>
             ABOUT
           </Link>
         </li>
-        <li className='mx-4 my-6 md:my-0'>
+        <li className='px-4 my-6 md:my-0'>
           <Link to={'/contact'} className='text-white flex items-center '>
             CONTACT
           </Link>

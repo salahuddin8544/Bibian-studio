@@ -1,5 +1,5 @@
 import React from 'react';
-import vr from '../../../assets/arbr/image.webp'
+import vr from '../../../assets/arbr/AR_VR image.jpg'
 import ArBrItem from './ArBrItem';
 const ArBr = () => {
     const contents =[
@@ -28,7 +28,8 @@ const ArBr = () => {
         <div>
            <div className='w-11/12 mx-auto'>
            <section className=''>
-                <img className='w-full' height={600} src={vr} alt="" />
+                <img className='w-9/12 mx-auto lg:h-[90vh] md:h-[80vh]'  src={vr} alt="" />
+                <h1 className='text-5xl font-semibold text-center my-16'> Our Products </h1>
             </section>
             <section>
                 {
@@ -40,6 +41,7 @@ const ArBr = () => {
                 }
             </section>
            </div>
+
         </div>
     );
 };

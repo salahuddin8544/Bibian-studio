@@ -172,11 +172,11 @@ const VideoEditGrahphicsThumbnail = () => {
         </h5>
         <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 mb-10 lg:gap-y-0 gap-y-10 lg:mt-10 mt-8">
             <div>
-             <img src={thumbnailOne} className="lg:w-11/12 md:w-10/12 w-10/12 lg:h-[430px] h-[] mx-auto rounded-md" />
+             <img src={thumbnailOne} className="lg:w-11/12 md:w-10/12 w-10/12 lg:h-[430px] md:h-[360px] sm:h-[360px] mx-auto rounded-md" />
 
             </div>
             <div>
-              <img src={thumbnailTwo} className="lg:w-11/12 md:w-10/12 w-10/12 lg:h-[430px] mx-auto rounded-md" />
+              <img src={thumbnailTwo} className="lg:w-11/12 md:w-10/12 w-10/12 lg:h-[430px] md:h-[360px] sm:h-[360px] h-[280px] mx-auto rounded-md" />
             </div>
           
         </div>

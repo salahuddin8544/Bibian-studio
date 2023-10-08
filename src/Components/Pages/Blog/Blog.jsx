@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import BlogCard from './BlogCard';
+import Loading from '../../Loading';
 
 
 const Blog = () => {
@@ -26,11 +27,12 @@ const Blog = () => {
 
 
     if(loading){
-        return <div className='text-center text-3xl font-semibold my-10'> Loading.... </div>
+        // return <div className='text-center text-3xl font-semibold my-10'> Loading.... </div>
+        return  <Loading> </Loading>
     }
     return (
         <div className='mb-40'>
-            <h1 className='text-center mt-4'> Important Article  </h1>
+            <h1 className='text-center mt-4'>  Articles  </h1>
             <div className='grid lg:grid-cols-3 grid-cols-1 lg:w-10/12 md:10/12 w-11/12 mx-auto mt-24 lg:gap-y-16 gap-y-10'>
                 {blogs?.map((data) => <BlogCard key={data?._id} data={data}  />)}
             </div>

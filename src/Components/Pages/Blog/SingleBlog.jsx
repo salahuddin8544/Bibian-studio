@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Loading from '../../Loading';
 
 const SingleBlog = () => {
     const id = useParams()
@@ -25,7 +26,7 @@ const SingleBlog = () => {
      },[])
     
      if(loading){
-        return <div className='text-center text-3xl'> Loading.... </div>
+        return <Loading> </Loading>
      }
     return (
         <div className='border border-[#302f2f] w-10/12 my-8 mx-auto p-4'>

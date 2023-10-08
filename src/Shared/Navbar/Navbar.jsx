@@ -20,7 +20,7 @@ const Navbar = () => {
       link:'services/ar/br'
     },
     {
-      name:"Video edit , Motion Graphics , Thumbnail",
+      name:"Video Editing, Motion Graphics & Thumbnail",
       link: '/sercices/video-editing&motion-graphics&thumbnail'
     }
   ]

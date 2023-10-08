@@ -9,7 +9,7 @@ const Home = () => {
             
             <img className=' w-2/4 h-2/4 mx-auto mt-10' src={image} alt="" />
              <div className='mt-5'>
-              <img src={vibian} className='lg:w-[44%]  w-[50%] mx-auto lg:h-[38vh] md:h-[24vh]'/>
+              <img src={vibian} className='lg:w-[44%]  md:w-[50%] sm:w-[60%] w-[60%] mx-auto lg:h-[38vh] md:h-[24vh]'/>
              </div>
             
 

@@ -5,7 +5,7 @@ const VFX = () => {
     return (
         <div className=''>
             <section className='w-11/12 mx-auto'>
-                <iframe className='w-full' height="600" src="https://www.youtube.com/embed/fjzZFceZDTA?start=18" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className='w-full lg:h-[80vh] md:h-[70vh] h-[65vh] '  src="https://www.youtube.com/embed/fjzZFceZDTA?start=18" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p className='mt-6'>Visual Effects (VFX) involve crafting, altering, and enhancing visuals for movies, TV, games, and media. These effects are often shaped using computer-generated imagery (CGI) and can be combined with real-world effects. Vivian Studios has been working in the industry to help a lot of creative minds since 2020.</p>
             </section>
             <section className='w-11/12 mx-auto py-16 '>

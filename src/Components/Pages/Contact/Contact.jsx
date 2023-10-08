@@ -37,31 +37,31 @@ const Contact = () => {
                         <label className="block md:inline col-span-12 md:col-span-4">
                             <span className="font-semibold">Name</span>
                         </label>
-                        <input name="user_name"  {...register("name")} type="text" placeholder="Name" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />
+                        <input name="user_name"  {...register("name")} type="text" placeholder="Name" className="input input-bordered col-span-12 md:col-span-8 w-72 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />
                     </div>
                     <div className="mt-10 grid grid-cols-12">
                         <label className="block md:inline col-span-12 md:col-span-4">
                             <span className="font-semibold">Email</span>
                         </label>
-                        <input name="user_email" {...register("email")} type="text" placeholder="Email" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />
+                        <input name="user_email" {...register("email")} type="text" placeholder="Email" className="input input-bordered col-span-12 md:col-span-8 w-72 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />
                     </div>
                     <div className="mt-10 grid grid-cols-12">
                         <label className="block md:inline col-span-12 md:col-span-4">
                             <span className="font-semibold">Phone</span>
                         </label>
-                        <input  name="message" {...register("phone")} type="text" placeholder="Phone" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />
+                        <input  name="message" {...register("phone")} type="text" placeholder="Phone" className="input input-bordered col-span-12 md:col-span-8 w-72 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />
                     </div>
                     <div className="mt-10 grid grid-cols-12">
                         <label className="block md:inline col-span-12 md:col-span-4">
                             <span className="font-semibold">Message</span>
                         </label>
-                        <textarea type="text"{...register("message")}  placeholder="Message" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" name="" id="" cols="30" rows="5"></textarea>
+                        <textarea type="text"{...register("message")}  placeholder="Message" className="input input-bordered col-span-12 md:col-span-8 w-72 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" name="" id="" cols="30" rows="5"></textarea>
                     </div>
                     <div className="mt-10 grid grid-cols-12 ">
                         <label className="block md:inline col-span-12 md:col-span-4">
                         
                         </label>
-                        <input  type="submit" className='w-96 bg-grey2 rounded py-1 md:w-72 lg:w-96 cursor-pointer' value="Submit" />
+                        <input  type="submit" className=' bg-grey2 rounded py-1 w-72 md:w-72 lg:w-96 cursor-pointer' value="Submit" />
                     </div>
                    
                 </form>

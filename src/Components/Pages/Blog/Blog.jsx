@@ -27,7 +27,6 @@ const Blog = () => {
 
 
     if(loading){
-        // return <div className='text-center text-3xl font-semibold my-10'> Loading.... </div>
         return  <Loading> </Loading>
     }
     return (

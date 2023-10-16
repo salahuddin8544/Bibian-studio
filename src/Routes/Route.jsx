@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
-import Home from "../Components/Home/Home/Home";
-import Services from "../Pages/Services/Services";
-import Animation from "../Pages/Animation/Animation";
-import CgiAnimation from "../Pages/CgiAnimation/CgiAnimation";
+import Home from "../Components/Pages/Home/Home/Home";
+import Services from "../Components/Pages/Services/Services";
+import Animation from "../Components/Pages/Animation/Animation";
+import CgiAnimationItem from "../Components/Pages/CgiAnimation/CgiAnimationItem";
+import Contact from "../Components/Pages/Contact/Contact";
 
 const router = createBrowserRouter([
     {
@@ -24,8 +25,16 @@ const router = createBrowserRouter([
             },
             {
                 path:'services/cgi',
-                element:<CgiAnimation></CgiAnimation>
+                element:<CgiAnimationItem></CgiAnimationItem>
             },
+            {
+                path:'contact',
+                element:<Contact></Contact>
+            },
+            {
+                path:'*' ,
+                element: <div className="text-4xl text-center h-screen pt-40 font-semibold text-[red]"> Oops ! Routes not found   </div>
+            }
 
         ])
     }

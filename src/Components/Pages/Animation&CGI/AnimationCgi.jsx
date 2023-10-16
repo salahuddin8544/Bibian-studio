@@ -19,18 +19,18 @@ const AnimationCgi = () => {
             </section>
             <section className='w-11/12 mx-auto'>
                 <div className='grid grid-cols-1 my-9 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-                    <Link to={'https://www.instagram.com/p/CNrkSHghYKG/'}> 
+                    <Link to={'https://www.instagram.com/p/CNrkSHghYKG/'} target='_blank'> 
                     <img className='m-2 lg:w-full w-11/12 mx-auto lg:h-[400px] sm:h-[350px] rounded' src={img1} alt="" />
                     </Link>
                     
-                    <Link to={'https://www.instagram.com/p/COPlN5ChCG0/?img_index=1'}>
+                    <Link to={'https://www.instagram.com/p/COPlN5ChCG0/?img_index=1'} target='_blank'>
                     <img className='m-2 lg:w-full w-11/12 mx-auto lg:h-[400px] sm:h-[350px] rounded' src={img2} alt="" /> 
                     </Link>
 
-                    <Link to={'https://www.instagram.com/p/COaBVxHBNS5/?img_index=1'}> 
+                    <Link to={'https://www.instagram.com/p/COaBVxHBNS5/?img_index=1'} target='_blank'> 
                     <img className='m-2 lg:w-full w-11/12 mx-auto lg:h-[400px] sm:h-[350px] rounded' src={img3} alt="" />
                      </Link>
-                    <Link to={'https://www.instagram.com/p/COvMVG6hS7E/?img_index=1'}> 
+                    <Link to={'https://www.instagram.com/p/COvMVG6hS7E/?img_index=1'} target='_blank'> 
                     <img className='m-2 lg:w-full w-11/12 mx-auto lg:h-[400px] sm:h-[350px] rounded' src={img4} alt="" />
                     </Link>
 

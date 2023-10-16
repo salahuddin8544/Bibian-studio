@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import Lottie from "lottie-react";
 import animation from "/public/service.json";
-import { FaDesktop, FaGoogle, FaRegImage, FaVideo, FaYoutube } from "react-icons/fa";
+import { FaDesktop,  FaRegImage, FaVideo } from "react-icons/fa";
 import VideoEdit from "./videoEdit";
 import ShortVideos from "./shortVideos";
 import thumbnailOne from '../../../assets/thumbnail/online class (1).jpg';
 import thumbnailTwo from '../../../assets/thumbnail/thumbnail.jpg';
-import graphics from '../../../assets/icon/web-design.png';
-import thumbnail from '../../../assets/icon/image.png';
-
 
 
 const VideoEditGrahphicsThumbnail = () => {
@@ -53,17 +50,7 @@ const VideoEditGrahphicsThumbnail = () => {
     }
   ]
 
-  const thumbnailUrl = [
-    {
-      id: 10,
-      url:"https://drive.google.com/file/d/1ezknJKOTIYqgNL1Zfk_x60IbpJKMwmKz/view?usp=sharing "
-    },
-    {
-      id: 11,
-      url: "https://drive.google.com/file/d/1Mfsb8b7CSyr6x3aBP55vBGZSDD-fSRsc/view?usp=sharing"
-    }
 
-  ]
   return (
     <div>
       {/* Banner  Section  */}

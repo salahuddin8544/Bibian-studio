@@ -6,9 +6,10 @@ import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 const Contact = () => {
     const { register, handleSubmit } = useForm();
     const form = useRef();
-    const sendEmail = (data) =>{
+    const sendEmail = (e) =>{
         // console.log(data);
-        emailjs.sendForm('service_3qx5r54', 'template_7x3atdr', form.current, 'kjYuHpzNNeYnRBCVb')
+        e.preventDefault();
+        emailjs.sendForm('service_g1g7m33', 'template_aspexiu', form.current, 'ajv3zlMrXSh1xIusu')
           .then((result) => {
               console.log(result.text);
               toast.success('Message sent!')
@@ -32,36 +33,36 @@ const Contact = () => {
            
             <div className='col-span-12 md:col-span-8 bg-grey ps-6 md:ps-8 py- md:py-12'>
                 <h3 className='text-4xl font-bold'>GET IN TOUCH</h3>
-                <form ref={form}  onSubmit={handleSubmit(sendEmail)}>
+                <form ref={form}  onSubmit={sendEmail}>
                     <div className="mt-10 grid grid-cols-12">
                         <label className="block md:inline col-span-12 md:col-span-4">
                             <span className="font-semibold">Name</span>
                         </label>
-                        <input name="user_name"  {...register("name")} type="text" placeholder="Name" className="input input-bordered col-span-12 md:col-span-8  md:w-72 lg:w-96  sm:w-80 w-96 bg-grey2 rounded py-1 px-1 border" />
+                        <input type="text" name="user_name" placeholder="Name" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />
                     </div>
                     <div className="mt-10 grid grid-cols-12">
                         <label className="block md:inline col-span-12 md:col-span-4">
                             <span className="font-semibold">Email</span>
                         </label>
-                        <input name="user_email" {...register("email")} type="text" placeholder="Email" className="input input-bordered col-span-12 md:col-span-8  md:w-72 lg:w-96 sm:w-80 w-96 bg-grey2 rounded py-1 px-1 border" />
+                        <input type="email" name="user_email" placeholder="Email" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />
                     </div>
                     <div className="mt-10 grid grid-cols-12">
                         <label className="block md:inline col-span-12 md:col-span-4">
                             <span className="font-semibold">Phone</span>
                         </label>
-                        <input  name="message" {...register("phone")} type="text" placeholder="Phone" className="input input-bordered col-span-12 md:col-span-8  md:w-72 lg:w-96 sm:w-80 w-96 bg-grey2 rounded py-1 px-1 border" />
+                        <input  name="phone" type="text" placeholder="Phone" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" />
                     </div>
                     <div className="mt-10 grid grid-cols-12">
                         <label className="block md:inline col-span-12 md:col-span-4">
                             <span className="font-semibold">Message</span>
                         </label>
-                        <textarea type="text"{...register("message")}  placeholder="Message" className="input input-bordered col-span-12 md:col-span-8  md:w-72 lg:w-96 sm:w-80 w-96 bg-grey2 rounded py-1 px-1 border" name="" id="" cols="30" rows="5"></textarea>
+                        <textarea type="text" placeholder="Message" className="input input-bordered col-span-12 md:col-span-8 w-96 md:w-72 lg:w-96 bg-grey2 rounded py-1 px-1 border" name="message" id="" cols="30" rows="5"></textarea>
                     </div>
-                    <div className="mt-10 grid grid-cols-12 ">
+                    <div className="mt-10 grid grid-cols-12">
                         <label className="block md:inline col-span-12 md:col-span-4">
                         
                         </label>
-                        <input  type="submit" className=' bg-grey2 rounded py-1  md:w-72 lg:w-96 sm:w-80 w-96 cursor-pointer' value="Submit" />
+                        <input  type="submit" className='w-96 bg-grey2 rounded py-1 md:w-72 lg:w-96 cursor-pointer' value="Submit" />
                     </div>
                    
                 </form>

@@ -24,7 +24,9 @@
 
 .navbar-small-bg{
     background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
-
+    background-color: -moz-linear-gradien(rgba(0,0,0,.7),rgba(0,0,0,.7));
+    background-color: -webkit-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+    background-color: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7))
 }
 .service-list-bg{
     background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
